@@ -1,0 +1,402 @@
+@import'./fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+li{
+    list-style: none;
+}
+.bxContainer{
+    width: 1100px;
+    height: inherit;
+    margin: auto;
+    padding: 0 20px;
+}
+.container{
+    
+}
+.header{
+    width: 100%;
+    height: 10vh;
+}
+.header .bxContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .bxContainer ul{
+    display: flex;
+}
+.header .bxContainer ul li{
+    margin-left: 10px;
+    font-weight: 700;
+}
+.header .fa-bars{
+    font-size: 2em;
+    cursor: pointer;
+}
+.item--1{
+    width: 100%;
+    height: 70vh;
+}
+
+.item--1 .bxContainer{  
+    background: url(./img/undraw_Code_thinking_re_gka2.png) no-repeat;
+    background-position: right;
+    background-size: 70%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.item--1 .bxContainer .content span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #cccbcb;
+    bottom: -30px;
+    animation: animeBlocos 5s infinite ease-in-out;
+    opacity: 0;
+    position: relative;
+}
+.item--1 .bxContainer .content span::after{
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 100%;
+    height: 100%;
+    background: #3F3D5622;
+}
+.item--1 .bxContainer .content span:nth-child(1){
+    margin-left: 25%;
+}
+.item--1 .bxContainer .content span:nth-child(2){
+    animation-delay: 1.3s;
+    margin-left: 45%;
+}
+.item--1 .bxContainer .content span:nth-child(3){
+    animation-delay: 2s;
+    margin-left: 65%;
+}
+@keyframes animeBlocos{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-50vh) scale(2,2) rotate(360deg);
+        opacity: 1;
+    }
+}
+.item--1 .bxContainer .content h1{
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.item--1 .bxContainer .content p{
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+.item--2{
+    background: linear-gradient(45deg, #F2F2F2 70%, #e6e4e4 1px);
+    width: 100%; 
+    height: auto;
+}
+.item--2 .bxContainer{
+    overflow: hidden;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item--2 .bxContainer .bxItens{
+    width: 300px;
+    height: 300px;
+    background: #3F3D56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    transition: 1s ease-in-out;
+}
+.item--2 .bxContainer .bxItens::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff1;
+}
+.item--2 .bxContainer .bxItens i.fab{
+    font-size: 6em;
+    color: rgb(83, 83, 83);
+}
+.item--2 .bxContainer .bxItens:hover i.fa-html5{
+    background: linear-gradient(to right, #DD4B25 50%, #E96228 1px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(-100%);
+
+}
+.item--2 .bxContainer .bxItens:hover i.fa-css3{
+    background: linear-gradient(to right, #106EAD 50%, #28A8CC 1px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(-100%);
+}
+.item--2 .bxContainer .bxItens:hover i.fa-js-square{
+    color: #EFD81D;
+    transform: translateY(-100%);
+}
+.fa-html5, .fa-css3, .fa-js-square{
+    transition: 1s ease-in-out;
+    transform: translateY(-40px);
+}
+.item--2 .bxContainer .bxItens .content{
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.item--2 .bxContainer .bxItens .content h2{
+    margin-bottom: 20px;
+}
+.item--2 .bxContainer .bxItens .content p{
+   
+}
+.item--3 .bxContainer{  
+    background: url(./img/graduacao.png) no-repeat;
+    background-position: left;
+    background-size: 50%;
+    height: 450px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 2s ease-in-out;
+}
+.item--3 .bxContainer .container{
+    width: 50%;
+    background: #A6DEEF;
+    border: 1px solid #3F3D56;
+    padding: 30px;
+    border-radius: 10px;
+}
+.item--3 .bxContainer .container h2{
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.item--3 .bxContainer .container p{
+    font-weight: bold;
+    text-align: justify;
+}
+.item--4{
+    width: 100%;
+    height: auto;
+}
+.item--4 .bxContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.item--4 .itens--2{
+    width: 50%;
+    height: inherit;
+    background: url(./img/web.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.item--4 .itens--2{
+    width: 50%;
+    height: inherit;
+}
+.item--4 .itens--1 ul{
+    width: 200%;
+}
+.item--4 .itens--1 ul li{
+    padding: 10px;
+   display: flex;
+   align-items: center;
+}
+.item--4 .itens--1 ul li i{
+    font-size: 4em;
+    color: #3F3D56;
+    width: 90px;
+}
+.item--4 .itens--1 ul li span{
+    display: block;
+    width: 350px;
+    height: 20px;
+   border-radius: 20px;
+   border: 1px solid #3F3D56;
+    position: relative;
+    overflow: hidden;
+}
+.item--4 .itens--1 ul li span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: var(--i);
+    background: #D0CDE1;
+}
+.item--5{
+    width: 100%;
+    background: #F2F2F2;
+    padding: 20px 0;
+    text-align: center;
+    height: auto;
+}
+.item--5 .bxContainer{
+    overflow: hidden;
+}
+.item--5 .bxContainer h2{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.item--5 .bxContainer .sliderWidht{
+    width: 1800px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.item--5 .bxContainer .sliderWidht .templates{
+    width: 260px;
+    height: 240px;
+    flex-shrink: 1;
+    border: 1px solid #3F3D56;
+    box-shadow: 0 0 10px #3F3D56;
+}   
+.item--5 .bxContainer .sliderWidht .templates img{
+    width: 100%;
+    object-fit: cover;
+}
+.item--6{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+.item--6 .bxContainer{
+    display: flex;
+    justify-content: space-between;
+    background: url(./img/undraw_contact_us_15o2.png) no-repeat;
+    background-position: right;
+    background-size: 50%;
+}
+.item--6 .bxContainer .itens--1{
+    height: inherit;
+    width: 50%;
+    
+}
+
+.item--6 .itens--1 form{
+    background: #A6DEEF;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #3F3D56;
+}
+.item--6 .itens--1 h2{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.item--6 .itens--1 .bxInput{
+    border: ;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    background: #FFF;
+    border-radius: 10px;
+    border: 1px solid #3F3D56;
+}
+.item--6 .itens--1 .fa{
+    width: 30px;
+    font-size: 1.5em;
+    color: var(--cor3);
+    background: #FFF;
+}
+.item--6 .itens--1 input{
+    background: #FFF;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+.item--6 .itens--1 textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100px;
+    min-height: 100px;
+    background: #FFF;
+    border-radius: 10px;
+    border: 1px solid #3F3D56;
+
+}
+.item--6 .itens--1 button{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    background: #FFF;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    color: var(--cor3);
+}
+.item--6 .itens--1 button i{
+    margin-right: 10px;
+}
+footer{
+    background: #3F3D56;
+    width: 100%;
+}
+footer .bxContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    color: #A6DEEF;
+}
+footer .bxContainer ul{
+    display: flex;
+}
+footer .bxContainer ul li{
+    border: 1px solid #A6DEEF;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+footer .bxContainer ul li i{
+    color: #A6DEEF;
+    font-size: 3em;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
