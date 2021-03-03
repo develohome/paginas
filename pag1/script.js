@@ -65,3 +65,15 @@ var class_Item2_bxContainer = document.querySelector('.item--2 .bxContainer');
     const titulo = document.querySelector('.item--1 .bxContainer .content p');
     
     setTimeout(escrever(titulo), 2000);
+    var posLeft= 1;
+    var class_sliderWidth = document.querySelector('.sliderWidht');
+    document.querySelector('.fa-angle-left').onclick = ()=>{
+        posLeft--;
+        class_sliderWidth.style.marginLeft = `${posLeft}0%`
+        
+    }
+    document.querySelector('.fa-angle-right').onclick = ()=>{
+        posLeft++;
+        class_sliderWidth.style.marginLeft = `-${posLeft}0%`
+        
+    }
