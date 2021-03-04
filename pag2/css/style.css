@@ -1,0 +1,558 @@
+@import'./cores.css';
+@import'./anime.css';
+@import'./media.css';
+@import'../fontawesome-free-5.15.2-web/css/all.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.padd{
+    padding: 0 100px;
+}
+.container{
+    
+}
+.header{
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 10vh;
+    color: var(--roxo4);
+}
+/*------------------------------------Banner--------------------------*/
+.banner{
+    height: 70vh;
+    width: 100%;
+    background: url(../img/developer1.png) no-repeat right;
+    background-size: 60%;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.banner .box{
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--roxo4);
+    flex-shrink: 1;
+}
+.banner .box h2{
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+.banner .box p{
+    text-transform: capitalize;
+    font-weight: bold;
+    position: relative;
+}
+.banner .box p::after{
+    content: ' |';
+    opacity: 0;
+    animation: animePisca 1s infinite;
+}
+.banner .box .bxBlocos{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.banner .box .bxBlocos span{
+    border: 1px solid var(--roxo4);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    
+    opacity: 0;
+}
+.banner .box .bxBlocos span::after{
+    content: '';
+    top: -10px;
+    right: -10px;
+    width: 100%;
+    height: 100%;
+    background: var(--roxo0);
+    position: absolute;
+}
+.banner .box span:nth-child(1){
+   left: 10px;
+   animation: animeBlocos 12s infinite;
+}
+.banner .box span:nth-child(2){
+    left: 70px;
+    animation: animeBlocos 12s infinite;
+    animation-delay: 4.5s;
+ }
+ .banner .box span:nth-child(3){
+    left: 150px;
+    animation: animeBlocos 12s infinite;
+    animation-delay:1s ;
+ }
+ .banner .box span:nth-child(4){
+    left: 210px;
+    animation: animeBlocos 12s infinite;
+    animation-delay: 3.5s;
+ }
+ .banner .box span:nth-child(5){
+    left: 270px;
+    animation: animeBlocos 12s infinite;
+    animation-delay: 2s;
+ }
+
+.item--1{
+    display: flex;
+    justify-content: space-between;
+}
+.item--1 .box{
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid var(--roxo3);
+    padding: 20px;
+    position: relative;
+}
+.item--1 .box .fab{
+    font-size: 6em;
+    color: var(--roxo0);
+    margin-left: 200px;
+    margin-top: 50px;
+    transition: 1s all;
+}
+.item--1 .box:hover .fab{
+    transform: translateY(-60px);
+}
+.item--1 .box:hover .fa-html5{
+    color: #E96228;
+}
+.item--1 .box:hover .fa-css3{
+    color: #34ADE2;
+}
+.item--1 .box:hover .fa-js-square{
+    color: #EFD81D;
+}
+.item--1 .box .content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 30px 20px;
+    color: var(--roxo4);
+    transition: 1s ease-in-out all;
+}
+.item--1 .box:hover .content{
+    color: var(--roxo5);
+}
+.item--1 .box .content h2{
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.item--1 .box .content p{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.item--2{
+    margin-top: 30px;
+    background: var(--roxo1);
+    border-top: 1px solid var(--roxo3);
+    border-bottom: 1px solid var(--roxo3);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: var(--roxo4);
+}
+.item--2:hover{
+    color: var(--roxo6);
+}
+.item--2 h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.item--2 p{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+.item--2 button{
+    background: linear-gradient(to top, var(--roxo4), var(--roxo3));
+    font-size: 1.5em;
+    padding: 5px 30px;
+    color: var(--roxo1);
+    border: 1px solid var(--roxo5);
+    border-radius: 10px;
+    outline: none;
+}
+
+.item--3{
+    margin-top: 30px;
+    height: 500px;
+    background: url(../img/code1.png) no-repeat right;
+    background-size: 60%;
+    display: flex;
+    align-items: center;
+}
+.item--3 .content{
+    width: 350px;
+    height: 400px;
+    background: var(--roxo1);
+    border-radius: 10px;
+    border: 1px solid var(--roxo3);
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item--3 .content i{
+    font-size: 4em;
+    color: var(--roxo2);
+    position: absolute;
+    transition: 1s all ease-in-out;
+    cursor: pointer;
+}
+.item--3 .content i:nth-child(1){
+    top: 20px;
+    left: 40%;
+}
+.item--3 .content i:nth-child(2){
+    top: 25%;
+    left: 25px;
+}
+.item--3 .content i:nth-child(3){
+    top: 25%;
+    right: 25px;
+}
+.item--3 .content i:nth-child(4){
+    bottom: 25%;
+    left: 25px;
+}
+.item--3 .content i:nth-child(5){
+    bottom: 25%;
+    right: 25px;
+}
+.item--3 .content i:nth-child(6){
+    bottom: 20px;
+    left: 43%;
+    
+}
+
+.item--3 .content i:nth-child(1):hover{
+    color: #5ED3F3;
+}
+.item--3 .content i:nth-child(2):hover{
+    color: #8CBF3D; 
+}
+.item--3 .content i:nth-child(3):hover{
+    color: #8553D0;
+}
+.item--3 .content i:nth-child(4):hover{
+    color: #787CB4;
+}
+.item--3 .content i:nth-child(5):hover{
+    color: #BD002E;
+}
+.item--3 .content i:nth-child(6):hover{
+    color: #F77606;
+}
+
+.item--3 .content i:hover{
+    color: red;
+    transform: scale(1.1, 1.1) ;
+}
+.item--3 .content .progresso{
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s all ease-in-out;
+    background: #F1DFFD77;
+}
+.item--3 .content .progresso h2{
+    transition: 1s all ease-in-out;
+    color: #fff;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.item--3 .content .progresso span{
+    width: 130px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: none;
+    transition: 1s all ease-in-out;
+}
+.item--3 .content .progresso span i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #fff;
+}
+.item--4{
+    margin-top: 30px;
+    height: 550px;
+    background: url(../img/web_developer1.png) no-repeat right;
+    background-size: 60%;
+    background-position: left;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 100px;
+}
+.item--4 .tampletes{
+    width: 350px;
+    height: inherit;
+    background: var(--roxo1);
+    border: 1px solid var(--roxo4);
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+.item--4 .tampletes h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+.item--4 .tampletes .boxTamplete {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.item--4 .tampletes .boxTamplete .bxTampletes{
+    width: 150px;
+    height: 138px;
+    border: 1px solid var(--roxo4);
+    margin: 10px 5px;
+    border-radius: 10px ;
+    overflow: hidden;
+    transition: .5s all ease-in-out;
+    cursor: pointer;
+}
+.item--4 .tampletes .boxTamplete .bxTampletes:hover{
+    box-shadow: 0 0 10px var(--roxo4);
+}
+.item--4 .tampletes .boxTamplete .bxTampletes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item--5{
+    margin-top: 30px;
+    height: 550px;
+    background: url(../img/contact1.png) no-repeat;
+    background-size: 70%;
+    background-position: right;
+    display: flex;
+    padding: 50px auto;
+    align-items: center;
+    border-bottom: 1px solid var(--roxo1);
+    position: relative;
+}
+.item--5 form{
+    width: 350px;
+    height: inherit;
+    background-color: var(--roxo1);
+    border-radius: 10px 10px 0 0 ;
+    padding: 40px 20px;
+    border: 1px solid var(--roxo4);
+    border-bottom: none;
+    position: absolute;
+    top: 1px;
+}
+.item--5 form h2{
+    text-transform: uppercase;
+    color: var(--roxo4);
+    margin-bottom: 30px;
+}
+.item--5 form .bxContato{
+    width: 100%;
+    background: #fff;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative;
+}
+.item--5 form .bxContato i{
+    font-size: 1.7em;
+    color: var(--roxo4);
+}
+.item--5 form .bxContato input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+    font-size: 1.1em;
+    color: var(--roxo4);
+    position: relative;
+    z-index: 0;
+}
+
+.item--5 input::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    left: 0;
+    bottom: 0;
+    background: var(--roxo4);
+    z-index: 999;
+}
+.item--5 form .bxContato input::placeholder, .item--5 form  textarea::placeholder{
+    color: var(--roxo4);
+}
+.item--5 form  textarea{
+    border: 1px solid var(--roxo2);
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px 20px;
+    color: var(--roxo4);
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+.item--5 form button{
+    padding: 5px 20px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    border: 1px solid var(--roxo5);
+    background: var(--roxo4);
+    color: #fff;
+    border-radius: 10px;
+}
+footer{
+    background: var(--roxo1);
+    border-top:1px solid var(--roxo4);
+    display: flex;
+    justify-content: space-between;
+}
+.footer1{
+    padding: 30px 0;
+    color: var(--roxo4);
+}
+.footer1 h2{
+    margin-bottom: 20px;
+}
+.footer1 p{
+    font-weight: bold;
+}
+.footer2{
+    
+    padding: 30px 0;
+}
+.footer2{
+    color: var(--roxo4);
+    font-size: 1.7em;
+    display: flex;
+    align-items: center;
+}
+.footer2 i{
+    margin-left: 10px;
+    border: 1px solid var(--roxo4);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease-out 1s;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+}
+.footer2 i:hover{
+    transform: translateY(-10px);
+    background: var(--roxo2);
+    color: var(--roxo1);
+}
+.footer2 i.fab:hover::after{
+    transform: skewX(45deg) translate(-100px);
+ }
+ .footer2 i.fab::after{
+     content: '';
+     position: absolute;
+     width: 50%;
+     height: 100%;
+     top: 0;
+     background-color: #ffffff;
+     transform: skewX(45deg) translateX(80px);
+     transition: .2s all linear;
+ }
+
+.rodape{
+    width: 100%;
+    padding: 10px 0;
+    background: var(--roxo4);
+    color: #fff;
+    text-align: center;
+}
+.modal{
+    width: 100%;
+    height: 100vh;
+    background: #0002;
+    backdrop-filter: blur(15px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+.modal .modalMain{
+    width: 600px;
+    height: 80vh;
+    background: #fff;
+    border: 1px solid var(--roxo4);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px var(--roxo4);
+    margin: 8vh auto;
+}
+.modal .modalMain .modalHeader{
+    padding: 5px 10px;
+    background: var(--roxo3);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 5vh;
+    color: #fff;
+}
+.modal .modalMain .modalHeader i.fas{
+    transition: 1s all ease-in-out;
+    font-size: 1.1em;
+}
+.modal .modalMain .modalHeader i.fas:hover{
+    transform: rotate(360deg);
+    color: var(--roxo4);
+}
