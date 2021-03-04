@@ -57,6 +57,7 @@ li{
     display: flex;
     align-items: center;
     position: relative;
+    
 }
 .item--1 .bxContainer .content span{
     display: block;
@@ -264,8 +265,40 @@ li{
     top: 0;
     height: 100%;
     width: var(--i);
-    background: #A6DEEF;
 }
+.item--4 .itens--1 ul li:nth-child(1) span::after{
+    background: #5ED3F3;
+}
+.item--4 .itens--1 ul li:nth-child(2) span::after{
+    background: #689F63;
+}
+.item--4 .itens--1 ul li:nth-child(3) span::after{
+    background: #7377AD;
+}
+.item--4 .itens--1 ul li:nth-child(4) span::after{
+    background: #684099;
+}
+.item--4 .itens--1 ul li:nth-child(5) span::after{
+    background: #FF7906;
+}
+i.fa-react{
+    color: #5ED3F3 !important;
+}
+.fa-node-js{
+    color: #689F63 !important;
+}
+.fa-php{
+    color: #7377AD !important;
+}
+.fa-bootstrap{
+    color: #684099 !important;
+}
+.fa-database{
+    color: #FF7906 !important;
+}
+
+
+
 .item--5{
     width: 100%;
     background: #F2F2F2;
@@ -299,12 +332,12 @@ li{
     flex-shrink: 1;
     border: 1px solid #3F3D56;
     box-shadow: 0 0 10px #3F3D56;
-    overflow: hidden;
-}   
+    overflow: hidden;}   
 .item--5 .bxContainer .sliderWidht .templates img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 }
 .item--5 .bxContainer i.fas{
     z-index: 1;
