@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <main class="container">
+        <div class="login">
+            <i class="fa fa-close"></i>
+            <i class="fa fa-user-circle"></i>
+            <form>
+                <div class="bxInput">
+                    <input type="text" placeholder="Login">
+                    <span></span>
+                </div>
+                <div class="bxInput">
+                    <input type="password" placeholder="Senha">
+                    <span></span>
+                </div>
+                <button>entrar</button>
+                
+            </form>
+        </div>
+        <div class="info">
+            <p><span>COVID-19:</span> Receba atualizações sobre o coronavírus para manter você e as pessoas à sua volta em segurança.</p>
+        </div>
+        <header class="header">
+            <div class="logo">
+                <a href="">CH</a>
+            </div>
+            <div class="navbars">
+                <div class="agenda">
+                    <ul>
+                        <li><i class="fa fa-phone"></i></li>
+                        <li><p>Central de Atendimento:</p><p>(XX) XXXX - XXXX</p></li>
+                        <li><button><p>agende sua</p><p>consulta !</p></button></li>
+                    </ul>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="">institucional</a></li>
+                        <li><a href="">convênios</a></li>
+                        <li><a href="">especialidades</a></li>
+                        <li><a href="">nossas unidades</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">centro de estudos</a></li>
+                        <li><a href="#"><i class="fa fa-sign-in" title="Login"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="banner">
+            <div class="bannerMsg">
+                <h1>faça seus agendamentos de consulta em apenas alguns cliques</h1>
+                <button><p>muito mais praticidade</p>  pra você</button>
+            </div>
+        </section>
+        <section class="services">
+            <div class="itens--services">
+                <i class="fa fa-heartbeat"></i>
+                <div class="details">
+                    <h2>Lorem ipsum </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus praesentium doloribus saepe aut deleniti consectetur odio ipsam libero neque! Officia eligendi minus consectetur perspiciatis fuga obcaecati mollitia eaque labore quae.</p>
+                    <button>Ler mais</button>
+                </div>
+            </div>
+            <div class="itens--services">
+                <i class="fa fa-hard-of-hearing"></i>
+                <div class="details">
+                    <h2>Lorem ipsum </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus praesentium doloribus saepe aut deleniti consectetur odio ipsam libero neque! Officia eligendi minus consectetur perspiciatis fuga obcaecati mollitia eaque labore quae.</p>
+                    <button>Ler mais</button>
+                </div>
+            </div>
+            <div class="itens--services">
+                <i class="fa fa-eye"></i>
+                <div class="details">
+                    <h2>Lorem ipsum </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus praesentium doloribus saepe aut deleniti consectetur odio ipsam libero neque! Officia eligendi minus consectetur perspiciatis fuga obcaecati mollitia eaque labore quae.</p>
+                    <button>Ler mais</button>
+                </div>
+            </div>
+        </section>
+        <section class="calendar">
+
+        </section>
+    </main>
+    <script>
+        window.addEventListener('scroll', ()=>{
+            document.querySelector('header').classList.toggle('fixo', window.scrollY>0)
+        })
+        var showHide = document.querySelector('.login')
+        document.querySelector('.fa-sign-in').onclick = () =>{
+            showHide.classList.toggle('showLogin')
+        }
+        document.querySelector('.fa-close').onclick = () =>{
+            showHide.classList.toggle('showLogin')
+        }
+    </script>
+</body>
+</html>
